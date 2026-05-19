@@ -1,0 +1,30 @@
+return {
+  -- 'cursortab/cursortab.nvim',
+  -- -- version = "*",  -- Use latest tagged version for more stability
+  -- lazy = false, -- The server is already lazy loaded
+  -- build = 'cd server && go build',
+  -- config = function()
+  --   require('cursortab').setup {
+  --     log_level = 'trace',
+  --     keymaps = {
+  --       accept = false, -- Let blink manage <Tab>
+  --     },
+  --     blink = {
+  --       enabled = true,
+  --       ghost_text = false, -- Disable native ghost text
+  --     },
+  --     provider = {
+  --       type = 'inline',
+  --       url = 'https://api.eliza.yandex.net/internal/gpt-oss-120b/v1/chat/completions',
+  --       api_key_env = 'ELIZA_API_KEY',
+  --       -- Имя вашей модели, если требуется API
+  --       model = 'internal/gpt-oss-120b',
+  --
+  --       -- Опциональные параметры для тонкой настройки
+  --       max_tokens = 512, -- Максимальная длина генерируемого текста
+  --       temperature = 0.2, -- Температура (ниже = более детерминировано)
+  --       completion_timeout = 5000, -- Таймаут в миллисекундах
+  --     },
+  --   }
+  -- end,
+}
