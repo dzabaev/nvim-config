@@ -741,6 +741,11 @@ require('lazy').setup({
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
       },
+      formatters = {
+        ruff_format = {
+          args = { '--line-length=120', '--stdin-filename', '$FILENAME', '-' },
+        },
+      },
     },
   },
 
@@ -1013,7 +1018,7 @@ require('lazy').setup({
 require 'custom.custom'
 -- Подстраивать новые строки под предыдущий отступ
 vim.o.smartindent = true
-vim.opt.cindent = true
+-- vim.opt.cindent = true
 vim.opt.cinoptions = 'N-s,g0'
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
